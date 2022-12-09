@@ -4,13 +4,13 @@ spring:
   cloud:
     gateway:
         routes:
-          - id: clienteService
-            uri: lb://client-service
-            predicates:
-              - Path=/clients/**
+        - id: CARDSERVICE
+          uri: lb://card-service
+          predicates:
+            - Path=/card/**
 
 server:
-  port: 8083
+  port: 8080
 
 eureka:
   client:
