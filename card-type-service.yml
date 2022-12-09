@@ -2,7 +2,7 @@ spring:
   application:
     name: card-type-service
   profiles:
-    active: default,dev
+    active: default
   datasource:
     username: root
     password: password
@@ -25,3 +25,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8081/eureka/
+
+
+server:
+  port: 8088
