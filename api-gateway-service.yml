@@ -8,6 +8,10 @@ spring:
           uri: lb://card-service
           predicates:
             - Path=/card/**
+        - id: CARDTYPESERVICE
+          uri: lb://card-type-service
+          predicates:
+            - Path=/card-type/**
 
 server:
   port: 8080
